@@ -1,0 +1,12 @@
+@-webkit-keyframes heart-beat {
+	from {
+		color: rgb(255, 0, 0);
+	}
+	to {
+		color: rgb(200, 50, 50);
+	}
+}
+
+#txt {
+	-webkit-animation: heart-beat 2s 1s infinite ease-in-out alternate;
+}

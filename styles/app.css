@@ -1,0 +1,125 @@
+#bg {
+  background: rgba(248,78,48,1);
+  background-image: radial-gradient(at 50% 50%, rgb(248, 78, 48) 0%, rgb(129, 39, 34) 100%);
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden; /* or auto or scroll */
+}
+
+#main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+#cnv {
+  margin-top: 50px;
+}
+
+#center-box {
+  text-align: center;
+}
+
+@-webkit-keyframes fade-in{
+    from{
+        opacity:0;
+        top:0px;
+    }
+    to{
+        opacity:1;
+        top:-15px;
+    }
+}
+
+#chat-history {
+  text-align: center;
+  color: white;
+  max-width: 400px;
+  font-size: 19px;
+  font-weight: bold;
+  -webkit-animation:fade-in 3s;
+  height: 170px;
+  overflow-y: auto;
+  border: none;
+}
+
+#inp-cont {
+  text-align: center;
+}
+
+#inp-txt {
+  width: 300px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 6px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(255,0,0,0.8); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(255,0,0,0.4); 
+}
+
+#mic-icon {
+  color: white;
+}
+
+#mic-icon::before {
+  font-size: 50px;
+  color: inherit;
+  
+}
+
+#mic-icon:hover{
+  color: gray;
+}
+
+#mic-icon:active{
+  color: black;
+}
+
+#footer-left {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+}
+
+@-webkit-keyframes heart-beat {
+  from {
+    color: rgb(235, 0, 0);
+  }
+  to {
+    color: rgb(210, 0, 0);
+  }
+}
+
+.pulsating {
+  -webkit-animation: heart-beat 2s 1s infinite ease-in-out alternate;
+}
